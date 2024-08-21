@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic Poster Builder with Tailwind CSS & JS</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div
+      class="bg-gray-100 max-w-[1600px] h-[800px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-12 rounded-xl"
+    >
+      <!-- left part input  -->
+      <div class="border rounded-xl shadow-md relative">
+        <h1
+          class="flex justify-center items-center gap-1 bg-white pt-1 pb-3 rounded-md w-[95%] mx-auto absolute left-1/2 -top-5 -translate-x-1/2"
+        >
+          <i class="ri-box-3-fill text-xl mt-1"></i>
+          <span class="text-2xl text-center font-semibold">Components</span>
+        </h1>
+      </div>
+
+      <!-- right part output preview -->
+      <div class="border rounded-xl shadow-md relative">
+        <h1
+          class="flex justify-center items-center gap-1 bg-white pt-1 pb-3 rounded-md w-[95%] mx-auto absolute left-1/2 -top-5 -translate-x-1/2"
+        >
+          <i class="ri-layout-line text-xl mt-1"></i>
+          <span class="text-2xl text-center font-semibold">Preview</span>
+        </h1>
+      </div>
+    </div>
+  </body>
 </html>
