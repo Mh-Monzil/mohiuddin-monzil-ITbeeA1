@@ -15,7 +15,7 @@
       class="bg-gray-100 max-w-[1600px] h-[800px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-12 rounded-xl"
     >
       <!-- left part input  -->
-      <div class="border rounded-xl shadow-md relative px-4">
+      <div class="border rounded-xl shadow-md relative px-4 ">
         <h1
           class="flex justify-center items-center gap-1 bg-white pt-1 pb-3 rounded-md w-[95%] mx-auto absolute left-1/2 -top-5 -translate-x-1/2"
         >
@@ -26,7 +26,7 @@
         <div class="mt-14">
           <form id="posterForm" class="space-y-4">
             <!-- heading input box -->
-            <div id="headingBox" class="relative border-2 p-4 rounded-md">
+            <div id="headingBox" class="hidden relative border-2 p-4 rounded-md mb-10">
               <span
                 id="closeHeading"
                 class="bg-gray-200 px-2 pt-0.5 pb-1 rounded-full absolute -right-2 -top-3 cursor-pointer"
@@ -43,7 +43,7 @@
               <input
                 type="text"
                 id="headline"
-                class="w-full px-3 py-2 border rounded-lg mt-6 focus:outline-yellow-400"
+                class="w-full px-3 py-2 border rounded-lg mt-8 focus:outline-yellow-400"
                 placeholder="Enter headline"
               />
 
@@ -52,17 +52,17 @@
                 <!-- left part -> align  -->
                 <div class="bg-white w-fit flex items-center rounded-md">
                   <!-- left  -->
-                  <div id="leftAlignText" class="px-3 py-1.5 border-r">
+                  <div id="leftAlignText" class="px-3 py-1.5 border-r hover:bg-gray-50 cursor-pointer">
                     <i class="ri-align-left"></i>
                     <span class="font-medium">Left</span>
                   </div>
                   <!-- center  -->
-                  <div id="centerAlignText" class="px-3 py-1.5 border-r">
+                  <div id="centerAlignText" class="px-3 py-1.5 border-r hover:bg-gray-50 cursor-pointer">
                     <i class="ri-align-center"></i>
                     <span class="font-medium">Center</span>
                   </div>
                   <!-- right  -->
-                  <div id="rightAlignText" class="px-3 py-1.5">
+                  <div id="rightAlignText" class="px-3 py-1.5 hover:bg-gray-50 cursor-pointer">
                     <i class="ri-align-right"></i>
                     <span class="font-medium">Right</span>
                   </div>
@@ -71,22 +71,45 @@
                 <!-- right part -> color  -->
                 <div class="bg-white w-fit ml-auto flex items-center rounded-md">
                   <!-- blue  -->
-                  <div id="blueText" class="px-3 py-1.5 border-r">
+                  <div id="blueText" class="px-3 py-1.5 border-r hover:bg-gray-50 cursor-pointer">
                     <i class="ri-circle-fill text-blue-400"></i>
                     <span class="font-medium">Left</span>
                   </div>
                   <!-- black  -->
-                  <div id="blackText" class="px-3 py-1.5 border-r">
+                  <div id="blackText" class="px-3 py-1.5 border-r hover:bg-gray-50 cursor-pointer">
                     <i class="ri-circle-fill text-black"></i>
                     <span class="font-medium">Black</span>
                   </div>
                   <!-- green  -->
-                  <div id="greenText" class="px-3 py-1.5">
+                  <div id="greenText" class="px-3 py-1.5 hover:bg-gray-50 cursor-pointer">
                     <i class="ri-circle-fill text-green-400"></i>
                     <span class="font-medium">Green</span>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <!-- description input box -->
+            <div id="descriptionBox" class="hidden relative border-2 p-4 rounded-md">
+              <span
+                id="closeDescription"
+                class="bg-gray-200 px-2 pt-0.5 pb-1 rounded-full absolute -right-2 -top-3 cursor-pointer"
+              >
+                <i
+                  class="ri-close-large-line text-[12px] font-bold text-red-500"
+                ></i>
+              </span>
+              <label
+                for="description"
+                class="absolute -top-3 bg-gray-200 px-4 py-1 text-sm font-medium rounded-lg"
+                >Description</label
+              >
+              <input
+                type="text"
+                id="description"
+                class="w-full px-3 py-2 pb-14 border rounded-lg mt-8 focus:outline-yellow-400"
+                placeholder="Write your thoughts here"
+              />
             </div>
           </form>
 
