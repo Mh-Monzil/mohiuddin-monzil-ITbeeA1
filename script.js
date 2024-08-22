@@ -1,9 +1,12 @@
 const headingButton = document.getElementById("headingButton");
 const descriptionButton = document.getElementById("descriptionButton");
+const imageButton = document.getElementById("imageButton");
 const closeHeading = document.getElementById("closeHeading");
 const closeDescription = document.getElementById("closeDescription");
+const closeImage = document.getElementById("closeImage");
 const headingBox = document.getElementById("headingBox");
 const descriptionBox = document.getElementById("descriptionBox");
+const imageBox = document.getElementById("imageBox");
 
 // visible input box
 function handleVisible(visibleButton, box) {
@@ -21,7 +24,7 @@ function handleHidden(hiddenButton, box, visibleButton) {
   });
 }
 
-// visible buttons 
+// visible buttons
 headingButton.addEventListener(
   "click",
   handleVisible(headingButton, headingBox)
@@ -30,10 +33,21 @@ descriptionButton.addEventListener(
   "click",
   handleVisible(descriptionButton, descriptionBox)
 );
+imageButton.addEventListener(
+  "click",
+  handleVisible(imageButton, imageBox)
+);
 
-
-// hidden buttons 
-closeHeading.addEventListener("click", handleHidden(closeHeading, headingBox, headingButton));
-
-closeDescription.addEventListener("click", handleHidden(closeDescription, descriptionBox, descriptionButton));
-
+// hidden buttons
+closeHeading.addEventListener(
+  "click",
+  handleHidden(closeHeading, headingBox, headingButton)
+);
+closeDescription.addEventListener(
+  "click",
+  handleHidden(closeDescription, descriptionBox, descriptionButton)
+);
+closeImage.addEventListener(
+  "click",
+  handleHidden(closeImage, imageBox, imageButton)
+);
